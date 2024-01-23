@@ -210,3 +210,13 @@ window.onload = function() {
   
     poof();
   };
+
+function redirectToAnotherPage() {
+    // Change "anotherpage.html" to the actual filename or URL of the target page
+    window.location.href = "card.html";
+}
+
+function redirectToOtherPage() {
+    // Change "anotherpage.html" to the actual filename or URL of the target page
+    window.location.href = "index.html";
+}
