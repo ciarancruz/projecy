@@ -43,11 +43,11 @@ body {
     cursor: pointer;
 }
 
-.menu button:active {
+.menu button:active, .menuback button:active {
     background-color: white;
 }
 
-.menu button a {
+.menu button a, .menuback button a {
     text-decoration: none;
 }
 
@@ -61,6 +61,12 @@ body {
     margin-left: 20px;
     background-color: #d4e9f0;
     border-radius: 10px;
-    border: 5px solid white;
+    border: 4px solid white;
     cursor: pointer;
+}
+
+
+.message img {
+    margin-top: -77px;
+    margin-left: 65px;
 }
