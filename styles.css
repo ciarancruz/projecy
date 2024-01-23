@@ -1,0 +1,13 @@
+body {
+    background-color: #d8ecf4;
+}
+
+.main {
+    width: 50%;
+    margin: auto;
+    text-align: center;
+}
+
+.main h1 {
+    font-size: 70px;
+}
