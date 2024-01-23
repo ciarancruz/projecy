@@ -65,8 +65,20 @@ body {
     cursor: pointer;
 }
 
+.message h3 {
+    font-size: 30px;
+}
+
+.message p {
+    font-size: 25px;
+}
+
+.message {
+    margin: 0px 20px 0px 20px;
+}
+
 
 .message img {
-    margin-top: -77px;
-    margin-left: 65px;
+    margin-top: -90px;
+    margin-left: 120px;
 }
