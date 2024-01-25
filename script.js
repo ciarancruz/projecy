@@ -1,4 +1,4 @@
-window.onload = function() {
+function confettiBlast() {
     // Globals
     var random = Math.random
       , cos = Math.cos
@@ -217,6 +217,5 @@ function redirectToAnotherPage() {
 }
 
 function redirectToOtherPage() {
-    // Change "anotherpage.html" to the actual filename or URL of the target page
     window.location.href = "index.html";
 }
