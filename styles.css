@@ -84,8 +84,3 @@ body {
 }
 
 /*------------------------------------ Buttons CSS ------------------------------------*/
-.buttons {
-    display: flex;
-    flex-direction: row;
-    margin-right: 80px;
-}
