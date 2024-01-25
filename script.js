@@ -213,7 +213,7 @@ window.onload = function() {
 
 function redirectToAnotherPage() {
     // Change "anotherpage.html" to the actual filename or URL of the target page
-    window.location.href = "card.html";
+    window.location.href = "question.html";
 }
 
 function redirectToOtherPage() {

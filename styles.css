@@ -82,3 +82,10 @@ body {
     margin-top: -90px;
     margin-left: 120px;
 }
+
+/*------------------------------------ Buttons CSS ------------------------------------*/
+.buttons {
+    display: flex;
+    flex-direction: row;
+    margin-right: 80px;
+}

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Burfday</title>
+    <link rel="stylesheet" href="styles.css">
+<body>
+    <div class="main" style="margin-top: 50px;">
+        <img id="gifmain" src="assets/cinnamaroll.gif" width="200px">        
+    </div>
+
+    <div class="menu">
+        <h2>Firstly, do you love me?</h2>
+        <div class="buttons">
+            <button onclick="toLetter()">yes</button>
+            <button onclick="wrongAnswer()">no</button>
+        </div>
+        <div>
+            <p id="answer" style="margin-top: 50px; margin-left: 30px;"></p>
+        </div>
+    </div>
+
+    
+
+</body>
+<script>
+    function wrongAnswer() {
+        document.getElementById("answer").innerHTML = "Wow... maybe answer that again";
+        changePicture()
+    }
+
+    function changePicture() {
+        document.getElementById("gifmain").src = "assets/cinangry.gif";
+    }
+
+    function toLetter() {
+        window.location.href = "card.html";
+    }
+
+</script>
+</html>
