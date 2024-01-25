@@ -4,6 +4,7 @@
 }
 
 body {
+    margin-top: 50px;
     background-color: #d4e9f0;
 }
 
@@ -81,4 +82,19 @@ body {
 .message img {
     margin-top: -90px;
     margin-left: 120px;
+}
+
+/*------------------------------------ Countdown Time ------------------------------------*/
+.launch-time {
+    display: flex;
+    margin-left: 55px;
+}
+
+.launch-time div {
+    flex-basis: 70px;
+}
+
+.launch-time div p {
+    font-size: 30px;
+    margin-bottom: 0px;
 }
