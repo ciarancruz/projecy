@@ -23,7 +23,7 @@
             <button onclick="answerNo()">no</button>
         </div>
 
-        <div id="gobackButton" style="display: none;">
+        <div id="gobackButton" style="display: none; margin-top: 40px; margin-left: 10px;">
             <button onclick="toHome()">Go back</button>
         </div>
 
@@ -32,6 +32,10 @@
 
 </body>
 <script>
+
+    function answerNo() {
+        alert("This button doesn't work for some reason");
+    }
 
     function changePicture() {
         document.getElementById("gifmain").src = "assets/cinangry.gif";
@@ -52,6 +56,10 @@
     }
 
     function toFinal() {
+        document.getElementById("answerbuttons").style.display = "none";
+        document.getElementById("followUp").style.display = "none";
+        document.getElementById("gobackButton").style.display = "block";
+        document.getElementById("gifmain").src = "assets/final.gif"
 
     }
 
