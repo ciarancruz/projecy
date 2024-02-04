@@ -212,10 +212,13 @@ function confettiBlast() {
   };
 
 function redirectToAnotherPage() {
-    // Change "anotherpage.html" to the actual filename or URL of the target page
-    window.location.href = "question.html";
+  window.location.href = "question.html";
 }
 
 function redirectToOtherPage() {
-    window.location.href = "index.html";
+  window.location.href = "index.html";
+}
+
+function toValentines() {
+  window.location.href = "valentines.html";
 }

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Burfday</title>
+    <link rel="stylesheet" href="styles.css">
+<body>
+    <div class="main" style="margin-top: 50px;">
+        <img id="gifmain" src="assets/cinamusic.gif" width="200px">        
+    </div>
+
+    <div class="questionMenu">
+        
+        <div id="answerbuttons" style="display: block;">
+            <h2>I have one more thing to ask...</h2>
+            <button onclick="toFollowUp()">What??</button>
+        </div>
+
+        <div id="followUp" style="display: none;">
+            <h2>Will you be my valentine?</h2>
+            <button onclick="toFinal()">yes</button>
+            <button onclick="answerNo()">no</button>
+        </div>
+
+        <div id="gobackButton" style="display: none;">
+            <button onclick="toHome()">Go back</button>
+        </div>
+
+    </div>
+    
+
+</body>
+<script>
+
+    function changePicture() {
+        document.getElementById("gifmain").src = "assets/cinangry.gif";
+    }
+
+    function toLetter() {
+        window.location.href = "card.html";
+    }
+
+    function toHome() {
+        window.location.href = "index.html";
+    }
+
+    function toFollowUp() {
+        document.getElementById("gifmain").src = "assets/fast.gif"
+        document.getElementById("answerbuttons").style.display = "none";
+        document.getElementById("followUp").style.display = "block";
+    }
+
+    function toFinal() {
+
+    }
+
+</script>
+</html>
