@@ -11,22 +11,36 @@
     </div>
 
     <div class="questionMenu">
-        <h2>Before you get your card tho...<br><br>Do you love me?</h2>
-        <div>
-            <button onclick="toLetter()">yes</button>
+        
+        <div id="answerbuttons" style="display: block;">
+            <h2>Do you have my gift?</h2>
+            <button onclick="toFollowUp()">yes</button>
             <button onclick="wrongAnswer()">no</button>
         </div>
+
+        <div id="followUp" style="display: none;">
+            <h2>Read everything in the next page before opening the gift</h2>
+            <button onclick="toLetter()">okay</button>
+        </div>
+
+        <div id="gobackButton" style="display: none; margin-top: 50px;">
+            <button onclick="toHome()">Go back</button>
+        </div>
+
     </div>
     <div>
-        <p id="answer" style="margin-top: 50px; margin-left: 70px;"></p>
+        <p id="answer" style="margin-top: 50px; margin-left: 100px;"></p>
     </div>
     
 
 </body>
 <script>
     function wrongAnswer() {
-        document.getElementById("answer").innerHTML = "Wow... maybe answer that again";
+        document.getElementById("answer").innerHTML = "Then why are you here? ";
         changePicture()
+        document.getElementById("answerbuttons").style.display = "none";
+        document.getElementById("gobackButton").style.display = "block";
+        
     }
 
     function changePicture() {
@@ -35,6 +49,15 @@
 
     function toLetter() {
         window.location.href = "card.html";
+    }
+
+    function toHome() {
+        window.location.href = "index.html";
+    }
+
+    function toFollowUp() {
+        document.getElementById("answerbuttons").style.display = "none";
+        document.getElementById("followUp").style.display = "block";
     }
 
 </script>
